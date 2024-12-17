@@ -43,10 +43,10 @@ static int write_file(struct seq_file * file, void *v) {
     percentage_used = (used_ram * 100) / total_ram;
     // Write info
     seq_printf(file, "{\n");
-    seq_printf(file, "\"total_ram\": %ld,\n", total_ram);
-    seq_printf(file, "\"free_ram\": %ld,\n", free_ram);
-    seq_printf(file, "\"used_ram\": %ld,\n", used_ram);
-    seq_printf(file, "\"percentage_used\": %ld,\n", percentage_used);
+    seq_printf(file, "\"total_ram\": %lu,\n", total_ram);
+    seq_printf(file, "\"free_ram\": %lu,\n", free_ram);
+    seq_printf(file, "\"used_ram\": %lu,\n", used_ram);
+    seq_printf(file, "\"percentage_used\": %lu\n", percentage_used);
     seq_printf(file, "}\n");
     return 0;
 }
