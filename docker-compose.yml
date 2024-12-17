@@ -5,7 +5,7 @@ services:
       - "3000:3000"
     privileged: true
     environment:
-      HOST: "34.42.61.185" # always copy the IP address from the monitoringapi vm in GCP
+      HOST: "34.67.155.252" # always copy the IP address from the monitoringapi vm in GCP
     volumes:
       - /proc:/proc
     restart: always
